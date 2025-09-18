@@ -1,7 +1,78 @@
+/* Body */
+
+body {
+  background-color: rgb(250, 237, 221);
+  margin: 0;
+}
+
 /* Header */
 
 .header {
-  background-color: #f8f8f8;
-  padding: 10px 0;
-  text-align: center;
+  background-color: #ffffff;
+  /* display: inline-block; */
+  color: rgb(0, 0, 0);
+  /* margin-left: 45%; */
+  /* width: 200px; */
+  font-family: 'Cormorant Garamond', serif;
+  /* position:fixed; Nav Bar will follow the view */
+  width: 100%;
+  top: 0;
 }
+
+.nav { /* assigned to element ul in header.html */
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0px 6px;
+  padding: 0;
+  height: 100%;
+}
+
+.nav .nav-item  { /* assigned to element li in header.html */
+  margin-right: 0px;
+  display: inline-block;
+  text-align: center;
+  padding: 20px 20px;
+  height: 100%;
+  margin: 6px 0px;
+}
+
+.nav .nav-item:hover {
+  background-color: #8adaff;
+}
+
+/* .header-text {
+  
+} */
+
+/* Footer */
+
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+/* Title */
+
+.title { 
+  background-image: url(images/flowerbackground.jpg);
+  background-size: 100% auto;
+  margin: 0;
+  height: auto;
+  padding: 100px;
+  text-align: center;
+
+}
+
+.title-text {
+  display: inline-block;
+}
+.logo {
+  display: inline-block;
+  margin: 20px;
+}
+

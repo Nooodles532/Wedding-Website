@@ -3,14 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
     <title>Wedding Website</title>
     <script>
+      // Get the page load from the top fo the screen
+      if ('scrollRestoration' in history) {
+        history.scrollRestoration = 'manual';
+      }
+
+      window.addEventListener('load', () => {
+        window.scrollTo(0, 0);
+      });
+
+      // Fetching the header
       fetch("header.html")
         .then((response) => response.text())
         .then((data) => {
           document.getElementById("header").innerHTML = data;
         })
         .catch((error) => console.error("Error loading HTML:", error));
+
+      // Fetching the footer
       fetch("footer.html")
       .then((response) => response.text())
         .then((data) => {
@@ -21,7 +34,20 @@
   </head>
   <body>
     <div id="header"></div>
-    <h1>Hello World</h1>
-    <div id="footer"></div>
+    <div class="title">
+      <div class="logo">
+        <img style="width: 70px;" src="images/caticon.png" alt="Logo">
+      </div>
+      <div class="title-text">
+        <h1> Milly & Dylan's</h1>
+        <h3>Wedding Website</h3>
+      </div>
+      <div class="logo">
+        <img style="width: 50px;" src="images/meerkaticon.png" alt="Logo">
+      </div>
+    </div>
+    <h1 style="height: 1000px;">
+      <h1>hi</h1>
+      <div id="footer"></div>
   </body>
 </html>
